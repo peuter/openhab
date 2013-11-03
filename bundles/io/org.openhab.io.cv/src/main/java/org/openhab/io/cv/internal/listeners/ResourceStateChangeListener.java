@@ -24,6 +24,7 @@ import org.openhab.core.items.Item;
 import org.openhab.core.items.StateChangeListener;
 import org.openhab.core.types.State;
 import org.openhab.io.cv.internal.broadcaster.CometVisuBroadcaster;
+import org.openhab.io.cv.internal.cache.CVBroadcasterCache;
 import org.openhab.io.cv.internal.filter.DuplicateBroadcastProtectionFilter;
 import org.openhab.io.cv.internal.filter.PollingDelayFilter;
 import org.openhab.io.cv.internal.filter.ResponseObjectFilter;
@@ -70,6 +71,8 @@ abstract public class ResourceStateChangeListener {
 	}
 	
 	public void registerItems(){
+		broadcaster.getBroadcasterConfig().setBroadcasterCache(new CVBroadcasterCache());
+		
 		broadcaster.getBroadcasterConfig().addFilter(new PerRequestBroadcastFilter() {
 			
 			@Override

@@ -40,5 +40,4 @@ Service-Component: OSGI-INF/cvapplication.xml
 Require-Bundle: org.openhab.io.rest.lib,
  javax.servlet,
  org.openhab.io.servicediscovery
-Export-Package: org.openhab.io.cv.cache,
- org.openhab.io.cv
+Export-Package: org.openhab.io.cv
