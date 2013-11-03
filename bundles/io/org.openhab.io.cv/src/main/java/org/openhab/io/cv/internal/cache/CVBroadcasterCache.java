@@ -63,8 +63,10 @@ public class CVBroadcasterCache extends UUIDBroadcasterCache {
 			}
 			result.add(response);
 		}
-		logger.info("Retrieved for AtmosphereResource {} cached messages {}",
+		if (logger.isTraceEnabled()) {
+			logger.trace("Retrieved for AtmosphereResource {} cached messages {}",
 				r.uuid(), result);
+		}
 		return result;
 	}
 
