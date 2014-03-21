@@ -27,8 +27,8 @@ public class GeneralBroadcaster extends JerseyBroadcaster {
 	private static final Logger logger = LoggerFactory.getLogger(GeneralBroadcaster.class);
 	protected Collection<ResourceStateChangeListener> listeners = Collections.newSetFromMap(new WeakHashMap<ResourceStateChangeListener, Boolean>());
 	
-	public GeneralBroadcaster(String id, org.atmosphere.cpr.AtmosphereConfig config) {
-		super(id, config);
+	public GeneralBroadcaster() {
+		
 		this.addBroadcasterLifeCyclePolicyListener(new BroadcasterLifeCyclePolicyListener() {
 			
 			@Override

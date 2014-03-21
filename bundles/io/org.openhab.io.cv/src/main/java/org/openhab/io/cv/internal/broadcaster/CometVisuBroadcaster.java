@@ -28,8 +28,7 @@ public class CometVisuBroadcaster extends JerseyBroadcaster {
 	private static final Logger logger = LoggerFactory.getLogger(CometVisuBroadcaster.class);
 	protected Collection<ResourceStateChangeListener> listeners = Collections.newSetFromMap(new WeakHashMap<ResourceStateChangeListener, Boolean>());
 	
-	public CometVisuBroadcaster(String id, org.atmosphere.cpr.AtmosphereConfig config) {
-		super(id, config);
+	public CometVisuBroadcaster() {
 		this.addBroadcasterLifeCyclePolicyListener(new BroadcasterLifeCyclePolicyListener() {
 			
 			@Override
