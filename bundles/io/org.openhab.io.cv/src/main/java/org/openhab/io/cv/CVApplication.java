@@ -192,7 +192,6 @@ public class CVApplication extends PackagesResourceConfig  {
         jerseyServletParams.put("javax.ws.rs.Application", CVApplication.class.getName());
         jerseyServletParams.put("org.atmosphere.core.servlet-mapping", CV_SERVLET_ALIAS+"/*");
         jerseyServletParams.put("org.atmosphere.useWebSocket", "true");
-        jerseyServletParams.put("org.atmosphere.useNative", "true");
         jerseyServletParams.put("org.atmosphere.cpr.AtmosphereInterceptor.disableDefaults", "true");
         // use the default interceptors without PaddingAtmosphereInterceptor
         // see: https://groups.google.com/forum/#!topic/openhab/Z-DVBXdNiYE
