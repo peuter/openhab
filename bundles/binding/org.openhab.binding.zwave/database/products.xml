@@ -120,6 +120,15 @@
 		</Product>
 		<Product>
 			<Reference>
+				<Type>0004</Type>
+				<Id>0001</Id>
+			</Reference>
+			<Model>AN157</Model>
+			<Label lang="en">Switch Plugin</Label>
+			<ConfigFile>everspring/an157.xml</ConfigFile>
+		</Product>
+		<Product>
+			<Reference>
 				<Type>0101</Type>
 				<Id>0001</Id>
 			</Reference>
@@ -218,6 +227,24 @@
 		<Name>Reitz Group</Name>
 		<Product>
 			<Reference>
+				<Type>0001</Type>
+				<Id>0000</Id>
+			</Reference>
+			<Model>054336</Model>
+			<Label lang="en">One Paddle Wall Dimmer Insert</Label>
+			<ConfigFile>reitz/054336.xml</ConfigFile>
+		</Product>
+		<Product>
+			<Reference>
+				<Type>1001</Type>
+				<Id>0000</Id>
+			</Reference>
+			<Model>064394</Model>
+			<Label lang="en">Schuko Plug Dimmer</Label>
+			<ConfigFile>reitz/064394.xml</ConfigFile>
+		</Product>
+		<Product>
+			<Reference>
 				<Type>2001</Type>
 				<Id>0000</Id>
 			</Reference>
@@ -255,7 +282,20 @@
 		<Product>
 			<Reference>
 				<Type>0002</Type>
+				<Id>0036</Id>
+			</Reference>
+			<Model>DSB54</Model>
+			<Label lang="en">Recessed Door/Window sensor</Label>
+			<ConfigFile>aeon/dsb54.xml</ConfigFile>
+		</Product>
+		<Product>
+			<Reference>
+				<Type>0002</Type>
 				<Id>0004</Id>
+			</Reference>
+			<Reference>
+				<Type>0002</Type>
+				<Id>001D</Id>
 			</Reference>
 			<Model>DoorSensor</Model>
 			<Label lang="en">Door/Window sensor</Label>
@@ -287,7 +327,16 @@
 			</Reference>
 			<Model>DSB06</Model>
 			<Label lang="en">Smart Energy Switch</Label>
-			<ConfigFile></ConfigFile>
+			<ConfigFile>aeon/dsb06.xml</ConfigFile>
+		</Product>
+		<Product>
+			<Reference>
+				<Type>0003</Type>
+				<Id>0008</Id>
+			</Reference>
+			<Model>Smart Dimmer</Model>
+			<Label lang="en">Smart Energy Dimmer</Label>
+			<ConfigFile>aeon/smartdimmer.xml</ConfigFile>
 		</Product>
 		<Product>
 			<Reference>
@@ -314,10 +363,19 @@
 		<Product>
 			<Reference>
 				<Type>0003</Type>
+				<Id>0011</Id>
+			</Reference>
+			<Model>MSES</Model>
+			<Label lang="en">Micro Smart Switch</Label>
+			<ConfigFile>aeon/mses.xml</ConfigFile>
+		</Product>
+		<Product>
+			<Reference>
+				<Type>0003</Type>
 				<Id>001A</Id>
 			</Reference>
 			<Model>MES</Model>
-			<Label lang="en">Micro Smart Switch</Label>
+			<Label lang="en">Switching Insert</Label>
 			<ConfigFile>aeon/mes.xml</ConfigFile>
 		</Product>
 		<Product>
@@ -337,6 +395,19 @@
 	<Manufacturer>
 		<Id>0098</Id>
 		<Name>Radio Thermostat Company of America</Name>
+		<Product>
+			<Reference>
+				<Type>0001</Type>
+				<Id>001E</Id>
+			</Reference>
+			<Reference>
+				<Type>1E12</Type>
+				<Id>015E</Id>
+			</Reference>
+			<Model>CT30</Model>
+			<Label lang="en">Z-Wave Thermostat</Label>
+			<ConfigFile>rtc/ct30.xml</ConfigFile>
+		</Product>
 		<Product>
 			<Reference>
 				<Type>6401</Type>
@@ -383,6 +454,27 @@
 		</Product>
 		<Product>
 			<Reference>
+				<Type>2002</Type>
+				<Id>0201</Id>
+			</Reference>
+			<Reference>
+				<Type>2002</Type>
+				<Id>0202</Id>
+			</Reference>
+			<Reference>
+				<Type>2002</Type>
+				<Id>0203</Id>
+			</Reference>
+			<Reference>
+				<Type>2002</Type>
+				<Id>0204</Id>
+			</Reference>
+			<Model>ZP3102</Model>
+			<Label lang="en">Motion Sensor</Label>
+			<ConfigFile>vision/zp3102.xml</ConfigFile>
+		</Product>
+		<Product>
+			<Reference>
 				<Type>2001</Type>
 				<Id>0102</Id>
 			</Reference>
@@ -401,10 +493,28 @@
 			<Label lang="de">Rauchmelder</Label>
 			<ConfigFile>vision/zs6101.xml</ConfigFile>
 		</Product>
+		<Product>
+			<Reference>
+				<Type>2005</Type>
+				<Id>0503</Id>
+			</Reference>
+			<Model>ZM1601</Model>
+			<Label lang="en">Battery Siren</Label>
+			<ConfigFile>vision/zm1601.xml</ConfigFile>
+		</Product>
 	</Manufacturer>
 	<Manufacturer>
 		<Id>010F</Id>
 		<Name>Fibaro System</Name>
+		<Product>
+			<Reference>
+				<Type>0800</Type>
+				<Id>1001</Id>
+			</Reference>
+			<Model>FGMS01</Model>
+			<Label lang="en">Movement Sensor</Label>
+			<ConfigFile>fibaro/fgms01.xml</ConfigFile>
+		</Product>
 		<Product>
 			<Reference>
 				<Type>0301</Type>
@@ -444,6 +554,10 @@
 			<ConfigFile>fibaro/fgd211.xml</ConfigFile>
 		</Product>
 		<Product>
+			<Reference>
+				<Type>0400</Type>
+				<Id>0102</Id>
+			</Reference>
 			<Reference>
 				<Type>0400</Type>
 				<Id>0104</Id>
@@ -571,11 +685,58 @@
 				<Type>0900</Type>
 				<Id>4000</Id>
 			</Reference>
+			<Reference>
+				<Type>0900</Type>
+				<Id>1000</Id>
+			</Reference>
 			<Model>FGRGBW</Model>
 			<Label lang="en">Fibaro RGBW Controller</Label>
 			<ConfigFile>fibaro/fgrgbw.xml</ConfigFile>
 		</Product>
+		<Product>
+      			<Reference>
+        			<Type>0300</Type>
+        			<Id>100a</Id>
+      			</Reference>
+      			<Reference>
+        			<Type>0300</Type>
+        			<Id>0106</Id>
+      			</Reference>
+      			<Reference>
+        			<Type>0300</Type>
+        			<Id>0104</Id>
+      			</Reference>
+      			<Reference>
+        			<Type>0300</Type>
+        			<Id>0107</Id>
+      			</Reference>
+      			<Model>FGR221</Model>
+      			<Label lang="en">Fibaro FGR221 Roller Shutter Controller</Label>
+      			<ConfigFile>fibaro/fgr221.xml</ConfigFile>
+    		</Product>
 	</Manufacturer>
+	<Manufacturer>
+		<Id>011F</Id>
+		<Name>Ecolink</Name>
+		<Product>
+			<Reference>
+				<Type>0001</Type>
+				<Id>0002</Id>
+			</Reference>
+			<Model>DWZWAVE1</Model>
+			<Label lang="en">Z-Wave Door/Window Sensor</Label>
+			<ConfigFile>eco/dwzwave1.xml</ConfigFile>
+		</Product>
+		<Product>
+			<Reference>
+				<Type>0001</Type>
+				<Id>0003</Id>
+			</Reference>
+			<Model>TILTZWAVE1</Model>
+			<Label lang="en">Z-Wave Garage Door Sensor</Label>
+			<ConfigFile>eco/tiltzwave1.xml</ConfigFile>
+		</Product>
+	</Manufacturer>	
 	<Manufacturer>
 		<Id>001E</Id>
 		<Name>Homeseer</Name>
@@ -614,14 +775,50 @@
 			<Label lang="en">4 button keyfob</Label>
 			<ConfigFile>zwaveme/kfob.xml</ConfigFile>
 		</Product>
+		<Product>
+			<Reference>
+				<Type>0100</Type>
+				<Id>0004</Id>
+			</Reference>
+			<Model>WCD2</Model>
+			<Label lang="en">Double Paddle Wall Controller</Label>
+			<ConfigFile>zwaveme/zme_wcd2.xml</ConfigFile>
+		</Product>
 	</Manufacturer>
 	<Manufacturer>
 		<Id>0118</Id>
 		<Name>Wenzhou TKB Control System</Name>
 		<Product>
 			<Reference>
-				<Type>0103</Type>
-				<Id>0101</Id>
+				<Type>0808</Type>
+				<Id>0808</Id>
+			</Reference>
+			<Model>TZ65D</Model>
+			<Label lang="en">Dual Paddle Wall Dimmer</Label>
+			<ConfigFile>tkb/tz65d.xml</ConfigFile>
+		</Product>
+		<Product>
+			<Reference>
+				<Type>0102</Type>
+				<Id>1020</Id>
+			</Reference>
+			<Model>TZ66D</Model>
+			<Label lang="en">Dual Paddle Wall Switch</Label>
+			<ConfigFile>tkb/tz66d.xml</ConfigFile>
+		</Product>
+		<Product>
+			<Reference>
+				<Type>0202</Type>
+				<Id>0611</Id>
+			</Reference>
+			<Model>TZ67</Model>
+			<Label lang="en">Wall Plug Dimmer</Label>
+			<ConfigFile>tkb/tz67.xml</ConfigFile>
+		</Product>
+		<Product>
+			<Reference>
+				<Type>0101</Type>
+				<Id>0103</Id>
 			</Reference>
 			<Model>TZ68</Model>
 			<Label lang="en">Wall Plug</Label>
@@ -645,6 +842,15 @@
 	<Manufacturer>
 		<Id>013C</Id>
 		<Name>Philio Technology Corporation</Name>
+		<Product>
+			<Reference>
+				<Type>0002</Type>
+				<Id>0002</Id>
+			</Reference>
+			<Model>PSM-02</Model>
+			<Label lang="en">Slim Multi-Sensor</Label>
+			<ConfigFile>philio/psm02.xml</ConfigFile>
+		</Product>
 		<Product>
 			<Reference>
 				<Type>0001</Type>
@@ -691,6 +897,31 @@
 			<Model>TH8320ZW</Model>
 			<Label lang="en">VisionPRO Z-Wave Touchscreen Programmable Thermostat</Label>
 			<ConfigFile>honeywell/th8320zw.xml</ConfigFile>
+		</Product>
+	</Manufacturer>
+	<Manufacturer>
+		<Id>0147</Id>
+		<Name>RPi</Name>
+		<Product>
+			<Reference>
+				<Type>0002</Type>
+				<Id>0003</Id>
+			</Reference>
+			<Model>RPi Controller</Model>
+			<Label lang="en">RPi ZWave Controller</Label>
+		</Product>
+	</Manufacturer>
+	<Manufacturer>
+		<Id>0148</Id>
+		<Name>EUROtronic Technology</Name>
+		<Product>
+			<Reference>
+				<Type>0001</Type>
+				<Id>0001</Id>
+			</Reference>
+			<Model>EUR_STELLAZ</Model>
+			<Label lang="en">Thermostatic Valve</Label>
+			<ConfigFile>eurotronic/stellaz.xml</ConfigFile>
 		</Product>
 	</Manufacturer>
 </Manufacturers>
